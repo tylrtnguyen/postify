@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootswatch CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-yrfSO0DBjS56u5M+SjWTyAHujrkiYVtRYh2dtB3yLQtUz3bodOeialO59u5lUCFF" crossorigin="anonymous">
+    <!-- Font Awesome CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon.png">
+    <title>Postify by Thong Ba Nguyen</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-success">
+        <div class="container">
+            <a href="#" class="navbar-brand">Postify</a>
+        </div>
+    </nav>
+
+    <!-- Post Container -->
+    <div class="container postContainer">
+       <div class="card card-body card-form">
+           <h1>Say something!</h1>
+           <p class="lead">What's on your mind?</p>
+           <!-- Post title -->
+           <div class="form-group">
+               <input type="text" name="title" id="title" class="form-control" placeholder="Post title">
+           </div>
+           <!-- Post body -->
+           <div class="form-group">
+                <textarea name="" id="body" cols="30" rows="10" class="form-control" placeholder="Post body"></textarea>
+            </div>
+            <!-- Hidden Field to deal with state -->
+            <input type="hidden" id="id" value="">
+            <!-- Submit button -->
+            <button class="post-submit btn btn-info btn-block btn-lg" type="button">Submit</button>
+            <span class="form-end"></span>
+       </div>
+       <br>
+       <!-- Post Display container -->
+       <div id="posts"></div>
+    </div>
+    <!-- Footer -->
+    <footer class="mt-5 p-3 text-center bg-light">
+        Postify &copy;2020 Built with <a href="https://babeljs.io/" target="_blank">Babeljs</a>, <a href="https://webpack.js.org/" target="_blank">Webpack</a>, <a href="https://bootswatch.com/flatly/" target="_blank">Bootswatch</a>, <a href="https://www.npmjs.com/package/json-server" target="_blank">json-server</a>
+    </footer>
+    <script src="build/app.bundle.js"></script>
+</body>
+</html>
